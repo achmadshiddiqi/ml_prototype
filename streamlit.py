@@ -1,5 +1,4 @@
 import pickle
-from flask import Flask, request, jsonify
 import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -39,7 +38,7 @@ def predict(nama_produk):
     elif result.argmax() == [8]:
         result = "Kamera"
     # return render_template("result.html", result=result)
-    return jsonify(result)
+    return result
 
 
 st.title('Product Segmentation')
