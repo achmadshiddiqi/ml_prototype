@@ -1,5 +1,3 @@
-scikit-learn
 pandas
 tensorflow
 numpy
-streamlib
