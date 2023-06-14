@@ -1,0 +1,6 @@
+sklearn
+pandas
+tensorflow
+pickle
+flask
+numpy
