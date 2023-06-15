@@ -43,7 +43,7 @@ def predict(nama_produk):
 
 st.title('Product Segmentation')
 st.header('Enter the products name:')
-nama_produk = st.text_input()
+nama_produk = st.text_input('Product name')
 
 if st.button("Predict"):
     category = predict(nama_produk)
