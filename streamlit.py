@@ -9,7 +9,9 @@ model = load_model('my_model.h5')
 X_train = pickle.load(open("X_train.pkl", "rb"))
 
 
-@st.cache
+st.cache_data
+
+
 def predict(nama_produk):
     barang = [nama_produk]
     tokenizer = Tokenizer(oov_token="<OOV>")
